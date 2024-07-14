@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "TasteSwap",
+    "slug": "TasteSwap-app",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.2.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tasteswap.tasteswapfoodies",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.934041375152-gmvso8s28hq8j8h5nqfkqg385et91nsu"
+        }
+      },
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "TasteSwap requires access to your camera to let you add dish pictures to share your food",
+        "NSPhotoLibraryUsageDescription": "TasteSwap needs to access your camera roll so that you can upload kitchen profile and dish images. Your images will not be shared without your permission",
+        "NSPhotoLibraryAddUsageDescription": "TasteSwap needs to access your camera roll so that you can upload kitchen profile and dish images. Your images will not be shared without your permission",
+        "NSLocationWhenInUseUsageDescription": "TasteSwap requires your location so that we can centre the map on you & find kitchens near you",
+        "NSLocationAlwaysUsageDescription": "TasteSwap requires your location so that we can centre the map on you & find kitchens near you",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "TasteSwap requires your location so that we can centre the map on you & find kitchens near you",
+        "NSLocationUsageDescription": "TasteSwap requires your location so that we can centre the map on you & find kitchens near you"
+      }
+    },
+    "android": {
+      "package": "com.tasteswap.tasteswapfoodies",
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 5
+    }
+  }
+}
